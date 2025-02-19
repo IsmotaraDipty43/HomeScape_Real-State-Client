@@ -58,7 +58,7 @@ const Navber = () => {
           Home
         </NavLink>
       </li>
-      {user && (
+      {user && (<>
       <li>
         <NavLink
           to="/allProperty"
@@ -71,12 +71,13 @@ const Navber = () => {
           All Properties
         </NavLink>
       </li>
+      </>
       )}
       
-      {user && (
+    {user && ( <>   
   <li>
     <NavLink
-      to="/dashboard"
+      to="/dashbroad"
       className={({ isActive }) =>
         `btn bg-transparent border-none text-lg font-semibold ${
           isActive ? 'text-red-500 border-b-2 border-red-500' : 'text-white'
@@ -86,7 +87,9 @@ const Navber = () => {
       Dashboard
     </NavLink>
   </li>
+  </>
 )}
+
 
    
       <li>
@@ -138,7 +141,7 @@ const Navber = () => {
           Home
         </NavLink>
       </li>
-      {user && (
+      {user && (<>
       <li>
         <NavLink
           to="/allProperty"
@@ -151,12 +154,12 @@ const Navber = () => {
           All Properties
         </NavLink>
       </li>
-      )}
+    </>  )}
 
-      {user && (
+      {user && (<>
   <li>
     <NavLink
-      to="/dashboard"
+      to="/dashbroad"
       className={({ isActive }) =>
         `btn bg-transparent border-none text-lg font-semibold ${
           isActive ? 'text-red-500 border-b-2 border-red-500' : 'text-white'
@@ -166,6 +169,7 @@ const Navber = () => {
       Dashboard
     </NavLink>
   </li>
+  </>
 )}
 
       <li>

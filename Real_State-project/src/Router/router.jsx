@@ -31,6 +31,7 @@ import AdminRoute from "./AdminRoute";
 import ErrorMessage from "../Component/ErrorMessage";
 import Aboutus from "../Pages/Aboutus";
 import ContactPage from "../Pages/ContactPage";
+import State from "../Pages/State";
 
 
 
@@ -82,45 +83,48 @@ const router = createBrowserRouter([
       children:[
         //admin Route
         {
-          path:'profile',
+          path:'/dashbroad/profile',
           element:<AdminRoute><ProfileofAdmin></ProfileofAdmin></AdminRoute>
         },
         {
-          path:'manage-properties',
+          path:'/dashbroad/manage-properties',
           element:<AdminRoute><AdminPropertymanage></AdminPropertymanage></AdminRoute>
         },
         {
-          path:'manage-users',
+          path:'/dashbroad/manage-users',
           element:<AdminRoute><ManageUsers></ManageUsers></AdminRoute>
         },
         {
-          path:'manage-reviews',
+          path:'/dashbroad/manage-reviews',
           element:<AdminRoute><ManageReviewsAdmin></ManageReviewsAdmin></AdminRoute>
         },
         {
-          path:'sold-properties',
-          element:<Private><SoldProperty></SoldProperty></Private>
+          path:'/dashbroad/sold-properties',
+          element:<AdminRoute><SoldProperty></SoldProperty></AdminRoute>
         },
         {
-          path:'Advertiseproperty',
+          path:'/dashbroad/Advertiseproperty',
           element:<AdminRoute><Advertiseproperty></Advertiseproperty></AdminRoute>
         },
-
+        {
+          path:'/dashbroad/Stats',
+          element:<AdminRoute><State></State></AdminRoute>
+        },
         //agent routes
         {
-          path:'agent-profile',
+          path:'/dashbroad/agent-profile',
           element:<Private><AgentProfile></AgentProfile></Private>
         },
         {
-          path:'add-property',
+          path:'/dashbroad/add-property',
           element:<Private><AddProperty></AddProperty></Private>
         },
         {
-          path:'my-properties',
+          path:'/dashbroad/my-properties',
           element:<Private><MyAddedProperty></MyAddedProperty></Private>
         },
         {
-               path:'requested-properties',
+               path:'/dashbroad/requested-properties',
                element:<Private><MyRequestedOfferedProperties></MyRequestedOfferedProperties></Private>
         },
        
@@ -131,15 +135,15 @@ const router = createBrowserRouter([
 
         //user route
         {
-          path:'my-profile',
+          path:'/dashbroad/my-profile',
           element:<Private><UserProfile></UserProfile></Private>
         },
         {
-          path: 'my-reviews',
+          path: '/dashbroad/my-reviews',
           element:<Private><MyReviews></MyReviews></Private>
         },
         {
-          path:'wishlist',
+          path:'/dashbroad/wishlist',
           element:<Private><Wishlist></Wishlist></Private>
         },
         {
@@ -147,7 +151,7 @@ const router = createBrowserRouter([
           element: <Private><MakeOffer></MakeOffer></Private>
         },
         {
-          path:'property-bought',
+          path:'/dashbroad/property-bought',
           element:<Private><PropertyBought></PropertyBought></Private>
         },
         {
@@ -158,7 +162,7 @@ const router = createBrowserRouter([
     
 
         
-        
+       
       ]
     },
 

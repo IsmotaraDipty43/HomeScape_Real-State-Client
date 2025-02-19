@@ -95,7 +95,18 @@ console.log(isAdmin);
                    <RiAdvertisementLine /> Advertise property
                   </NavLink>
                 </li>
-
+                <li>
+                  <NavLink
+                    to="/dashbroad/Stats"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "flex items-center gap-2 bg-gray-300 text-black rounded px-3 py-2"
+                        : "flex items-center gap-2 hover:bg-gray-700 rounded px-3 py-2"
+                    }
+                  >
+                    <FaStar /> Stats & Analytics
+                  </NavLink>
+                </li>
               </>
             ) : isAgent ? (
               // Agent Routes
