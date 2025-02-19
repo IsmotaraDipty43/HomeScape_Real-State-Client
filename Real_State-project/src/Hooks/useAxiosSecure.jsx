@@ -5,7 +5,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 
 
 const axiosSecure = axios.create({
-  baseURL: 'http://localhost:5001',
+  baseURL: 'https://realstate-server-rouge.vercel.app',
   
 });
 
