@@ -3,7 +3,7 @@ import { FaHeadset } from "react-icons/fa";
 
 const Support = () => {
   return (
-    <section className="bg-green-50 mb-10 py-12 px-8">
+    <section className=" mb-10 py-5 px-8">
       <div className="max-w-screen-xl mx-auto text-center">
         <FaHeadset className="text-6xl text-black mx-auto mb-6" />
         <h2 className="text-3xl font-bold text-gray-800 mb-6">

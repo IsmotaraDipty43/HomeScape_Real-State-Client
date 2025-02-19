@@ -23,9 +23,9 @@ const Services = () => {
             Discover your dream home effortlessly. Explore diverse properties
             and expert guidance for a seamless buying experience.
           </p>
-          <button className="text-blue-500 font-medium flex items-center justify-center hover:underline">
+          <a href='#investment'><button className="text-blue-500 font-medium flex items-center justify-center hover:underline">
             Learn More <span className="ml-1">→</span>
-          </button>
+          </button></a>
         </div>
 
         {/* Service 2 */}
@@ -40,9 +40,9 @@ const Services = () => {
             Sell confidently with expert guidance and effective strategies,
             showcasing your property's best features for a successful sale of a home.
           </p>
-          <button className="text-blue-500 font-medium flex items-center justify-center hover:underline">
+          <a href='#investment'>  <button className="text-blue-500 font-medium flex items-center justify-center hover:underline">
             Learn More <span className="ml-1">→</span>
-          </button>
+          </button></a>
         </div>
 
         {/* Service 3 */}
@@ -57,9 +57,9 @@ const Services = () => {
             Discover your perfect rental effortlessly. Explore a diverse variety
             of listings tailored precisely to suit your unique lifestyle needs.
           </p>
-          <button className="text-blue-500 font-medium flex items-center justify-center hover:underline">
+          <a href='#investment'><button className="text-blue-500 font-medium flex items-center justify-center hover:underline">
             Learn More <span className="ml-1">→</span>
-          </button>
+          </button></a> 
         </div>
       </div>
     </div>

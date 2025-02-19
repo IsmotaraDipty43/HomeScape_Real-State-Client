@@ -2,7 +2,7 @@ import React from "react";
 
 const Investment = () => {
   return (
-    <section className=" py-10 mb-10 px-12">
+    <section id='investment' className=" py-10 mb-10 px-12">
       <div className="max-w-screen-xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Investment Opportunities</h2>
         <p className="text-gray-600 text-lg text-center   mb-8">

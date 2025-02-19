@@ -19,8 +19,9 @@ const Home = () => {
     <Services></Services>
     <WhyChoose></WhyChoose>
     <ReviewSection></ReviewSection>
-    <Vision></Vision>
+  
     <Investment></Investment>
+    <Vision></Vision>
     <Support></Support>
         </div>
     );

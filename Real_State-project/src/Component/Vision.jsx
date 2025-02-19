@@ -3,7 +3,7 @@ import React from "react";
 const Vision = () => {
   return (
     <section
-      className="bg-cover bg-center text-white py-32 px-12 mb-20"
+      className="bg-cover bg-center text-white py-32 px-12 mb-10"
       style={{
         backgroundImage: "url('https://scrubbed.net/wp-content/uploads/2023/05/The-Importance-of-Accurate-Financial-Planning-for-Commercial-Real-Estate-1024x536.webp')",
       }}
