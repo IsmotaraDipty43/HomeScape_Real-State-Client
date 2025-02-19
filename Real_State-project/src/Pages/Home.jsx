@@ -20,7 +20,8 @@ const Home = () => {
     <WhyChoose></WhyChoose>
     <ReviewSection></ReviewSection>
     <Vision></Vision>
-    
+    <Investment></Investment>
+    <Support></Support>
         </div>
     );
 };
