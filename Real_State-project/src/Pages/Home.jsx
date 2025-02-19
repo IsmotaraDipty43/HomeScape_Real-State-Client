@@ -5,6 +5,9 @@ import Services from '../Component/Services';
 import WhyChoose from '../Component/WhyChoose';
 import ReviewSection from '../Component/ReviewSection';
 import { useLocation } from 'react-router-dom';
+import Vision from '../Component/Vision';
+import Investment from '../Component/Investment';
+import Support from '../Component/Support';
 
 const Home = () => {
     const location = useLocation();
@@ -16,6 +19,8 @@ const Home = () => {
     <Services></Services>
     <WhyChoose></WhyChoose>
     <ReviewSection></ReviewSection>
+    <Vision></Vision>
+    
         </div>
     );
 };
