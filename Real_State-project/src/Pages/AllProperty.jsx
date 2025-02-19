@@ -20,7 +20,6 @@ const AllProperty = () => {
   const [searchLocation, setSearchLocation] = useState(""); 
   const [sortOrder, setSortOrder] = useState("asc"); 
 
- 
   if (isLoading) {
     return (
       <div>
@@ -36,7 +35,6 @@ const AllProperty = () => {
   const filteredProperties = properties?.filter((property) =>
     property.location.toLowerCase().includes(searchLocation.toLowerCase())
   );
-
 
   const sortedProperties = filteredProperties?.sort((a, b) => {
     const priceA =
@@ -77,15 +75,21 @@ const AllProperty = () => {
         </div>
 
         <div className="flex items-center p-3 space-x-4">
-          {/* Sort by price */}
-          <select
-            onChange={(e) => setSortOrder(e.target.value)}
-            value={sortOrder}
-            className="border border-gray-300 rounded-md px-4 py-2"
-          >
-            <option value="asc">Price: Low to High</option>
-            <option value="desc">Price: High to Low</option>
-          </select>
+          {/* Sort by price */}<h1 className="text-lg text-black">Sort By :</h1>
+          <div className="flex space-x-2">
+            <button
+              onClick={() => setSortOrder("asc")}
+              className={`bg-gray-300 text-black py-2 px-4 rounded-md ${sortOrder === "asc" ? "bg-orange-500 text-white" : ""}`}
+            >
+              Low to High
+            </button>
+            <button
+              onClick={() => setSortOrder("desc")}
+              className={`bg-gray-300 text-black py-2 px-4 rounded-md ${sortOrder === "desc" ? "bg-orange-500 text-white" : ""}`}
+            >
+              High to Low
+            </button>
+          </div>
         </div>
       </div>
 
@@ -138,8 +142,7 @@ const AllProperty = () => {
 
               {/* Price Range */}
               <p className="text-gray-700 mb-4">
-                <strong>Price Range:</strong> $
-                {property.priceRange.minimumPrice} - $
+                <strong>Price Range:</strong> $ {property.priceRange.minimumPrice} - $
                 {property.priceRange.maximumPrice}
               </p>
 
